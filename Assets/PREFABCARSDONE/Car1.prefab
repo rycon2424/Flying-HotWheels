@@ -267,7 +267,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1484822491339212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7, y: -0.51449776, z: -9.31}
+  m_LocalPosition: {x: -1.52, y: -0.51449776, z: -9.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4308489841417598}
@@ -298,7 +298,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1727058184906438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.587, y: 0.34, z: 2.62}
+  m_LocalPosition: {x: 1.63, y: 0.34, z: 2.62}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4482429421139344}
@@ -406,7 +406,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1644629439424808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.71, y: 0.34, z: -2.77}
+  m_LocalPosition: {x: 1.64, y: 0.34, z: -2.77}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4482429421139344}
@@ -731,8 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1894574d082f67f46bf4e8d0155fc620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreviousFramePosition: {x: 0, y: 0, z: 0}
-  Speed: 0
   shakeSpeed: 0
 --- !u!114 &114678826053893996
 MonoBehaviour:
@@ -763,6 +761,10 @@ MonoBehaviour:
     steering: 0
     reverseTurn: 0
   motorSpeed: 0
+  brakeForce: -1000000
+  selfRigidbody: {fileID: 0}
+  PreviousFramePosition: {x: 0, y: 0, z: 0}
+  Speed: 0
 --- !u!124 &124763317923900520
 Behaviour:
   m_ObjectHideFlags: 1

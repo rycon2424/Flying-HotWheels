@@ -6,8 +6,8 @@ public class CarTrilling : MonoBehaviour
 
 {
 	
-	public Vector3 PreviousFramePosition;
-	public float Speed;
+	Vector3 PreviousFramePosition;
+	float Speed;
 	public float shakeSpeed; 
 	bool Up = true;
 	bool Again = true;
