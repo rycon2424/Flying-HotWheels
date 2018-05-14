@@ -29,6 +29,7 @@ public class CarChoose : MonoBehaviour {
 			if (whatCar == 0)
 			{
 				hidden++;
+				cars [0].SetActive(false);
 			}
 			hidden = hidden - 1;
 			cars [hidden].SetActive (false);
