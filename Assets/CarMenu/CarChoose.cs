@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CarChoose : MonoBehaviour {
+public class CarChoose : NetworkBehaviour {
 
 	public GameObject[] cars;
 	public float rotationSpeed;
@@ -11,7 +12,7 @@ public class CarChoose : MonoBehaviour {
 
 	void Start () 
 	{
-		whatCar++;
+		//whatCar++;
 		for (int i = 0; i < cars.Length; i++)
 		{
 			cars [i].SetActive (false);
@@ -30,6 +31,7 @@ public class CarChoose : MonoBehaviour {
 			{
 				hidden++;
 				cars [0].SetActive(false);
+				whatCar++;
 			}
 			hidden = hidden - 1;
 			cars [hidden].SetActive (false);

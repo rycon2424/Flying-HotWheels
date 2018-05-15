@@ -235,7 +235,6 @@ GameObject:
   - component: {fileID: 4043409758824870}
   - component: {fileID: 20061565816044254}
   - component: {fileID: 124504865578756882}
-  - component: {fileID: 81420326938886154}
   m_Layer: 0
   m_Name: Camero
   m_TagString: MainCamera
@@ -254,7 +253,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4902128147745364}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!4 &4054174741134610
 Transform:
@@ -293,7 +292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4902128147745364}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4294051106550576
 Transform:
@@ -310,7 +309,7 @@ Transform:
   - {fileID: 4904025217605232}
   - {fileID: 4803523575888864}
   m_Father: {fileID: 4902128147745364}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4332480964730932
 Transform:
@@ -349,7 +348,7 @@ Transform:
   m_LocalScale: {x: 4.4372106, y: 1.3025746, z: 7.7730856}
   m_Children: []
   m_Father: {fileID: 4902128147745364}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4530121819050820
 Transform:
@@ -392,7 +391,7 @@ Transform:
   - {fileID: 4746022399343188}
   - {fileID: 4225552795343032}
   m_Father: {fileID: 4902128147745364}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4803523575888864
 Transform:
@@ -417,11 +416,11 @@ Transform:
   m_LocalPosition: {x: 5.0309505, y: -0.83, z: -9.140486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4043409758824870}
   - {fileID: 4237811039293976}
   - {fileID: 4521712872492850}
   - {fileID: 4764863619215886}
   - {fileID: 4294051106550576}
-  - {fileID: 4043409758824870}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -713,13 +712,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.80245274, y: 0.8711274, z: 1.1137198}
   m_Center: {x: 0.06229748, y: -0.09260132, z: -0.07804928}
---- !u!81 &81420326938886154
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1924879008950570}
-  m_Enabled: 1
 --- !u!114 &114422564679101498
 MonoBehaviour:
   m_ObjectHideFlags: 1
