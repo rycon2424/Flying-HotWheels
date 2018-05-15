@@ -153,6 +153,8 @@ GameObject:
   - component: {fileID: 4902128147745364}
   - component: {fileID: 54900989001674786}
   - component: {fileID: 114430612143311834}
+  - component: {fileID: 114329049550016552}
+  - component: {fileID: 114818893001845566}
   m_Layer: 0
   m_Name: Car2
   m_TagString: Untagged
@@ -712,6 +714,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.80245274, y: 0.8711274, z: 1.1137198}
   m_Center: {x: 0.06229748, y: -0.09260132, z: -0.07804928}
+--- !u!114 &114329049550016552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1636856966898700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 38
+    i1: 179
+    i2: 210
+    i3: 8
+    i4: 81
+    i5: 244
+    i6: 111
+    i7: 244
+    i8: 168
+    i9: 86
+    i10: 123
+    i11: 57
+    i12: 142
+    i13: 203
+    i14: 127
+    i15: 197
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114422564679101498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -757,6 +791,27 @@ MonoBehaviour:
   selfRigidbody: {fileID: 0}
   PreviousFramePosition: {x: 0, y: 0, z: 0}
   Speed: 0
+--- !u!114 &114818893001845566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1636856966898700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.033333335
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!124 &124504865578756882
 Behaviour:
   m_ObjectHideFlags: 1
