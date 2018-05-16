@@ -1,15 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
 using UnityEngine.SceneManagement;
-<<<<<<< HEAD
-=======
->>>>>>> parent of 946bed2... push
 using UnityEngine.Networking;
-=======
 //using UnityEngine.Networking;
->>>>>>> parent of 3934c5b... trash
 
 public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
 
@@ -32,20 +26,11 @@ public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
 	{
 		transform.Rotate (0,rotationSpeed,0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-		carNumber = whatCar;
-
-=======
->>>>>>> parent of 3934c5b... trash
-		if(Input.GetKeyDown(KeyCode.W))
+		if(Input.anyKey)
 		{
-			carNumber = whatCar;
 			SceneManager.LoadScene (1);
 		}
 
-=======
->>>>>>> parent of 946bed2... push
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			hidden = whatCar;

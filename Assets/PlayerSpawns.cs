@@ -6,37 +6,14 @@ using UnityEngine.Networking;
 public class PlayerSpawns : NetworkManager {
 
 	private GameObject[] Car = new GameObject[11];
-	private GameObject Car2;
 	public static int playerCount;
 	public int playersConnected;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	public int displayChosenCar;
-	public static bool spawnMyCar = false;
-	bool canSpawn = false;
-=======
->>>>>>> parent of 946bed2... push
-=======
-	public int didIgetIt;
->>>>>>> parent of 3934c5b... trash
 
 	void Update()
 	{
 		playersConnected = playerCount;
-<<<<<<< HEAD
-<<<<<<< HEAD
-		displayChosenCar = CarChoose.carNumber;
-		if (spawnMyCar == true)
-		{
-			canSpawn = true;
-			spawnMyCar = false;
-		}
-=======
->>>>>>> parent of 946bed2... push
-=======
-		didIgetIt = CarChoose.carNumber;
->>>>>>> parent of 3934c5b... trash
 	}
+
 
 	public override void OnServerConnect(NetworkConnection conn)
 	{

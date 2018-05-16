@@ -311,8 +311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   showGUI: 1
-  offsetX: 160
-  offsetY: 30
+  offsetX: 0
+  offsetY: 0
 --- !u!114 &195713520
 MonoBehaviour:
   m_ObjectHideFlags: 0
