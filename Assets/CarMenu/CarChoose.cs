@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.SceneManagement;
+=======
+>>>>>>> parent of 946bed2... push
 using UnityEngine.Networking;
 
 public class CarChoose : NetworkBehaviour {
@@ -9,9 +12,7 @@ public class CarChoose : NetworkBehaviour {
 	public GameObject[] cars;
 	public float rotationSpeed;
 	public int whatCar;
-	int hidden;
-
-	public static int carNumber;
+	public int hidden;
 
 	void Start () 
 	{
@@ -26,6 +27,7 @@ public class CarChoose : NetworkBehaviour {
 	{
 		transform.Rotate (0,rotationSpeed,0);
 
+<<<<<<< HEAD
 		carNumber = whatCar;
 
 		if(Input.GetKeyDown(KeyCode.W))
@@ -33,6 +35,8 @@ public class CarChoose : NetworkBehaviour {
 			PlayerSpawns.spawnMyCar = true;
 		}
 
+=======
+>>>>>>> parent of 946bed2... push
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			hidden = whatCar;

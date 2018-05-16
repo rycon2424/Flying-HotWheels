@@ -4,7 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/CarTesting.unity
     guid: f7d7d851ed7fa6a4bbc2e5c8d0f07051
+=======
+  m_Scenes: []
+>>>>>>> parent of 946bed2... push

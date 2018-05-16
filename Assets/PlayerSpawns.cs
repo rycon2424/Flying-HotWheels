@@ -8,19 +8,25 @@ public class PlayerSpawns : NetworkManager {
 	private GameObject[] Car = new GameObject[11];
 	public static int playerCount;
 	public int playersConnected;
+<<<<<<< HEAD
 	public int displayChosenCar;
 	public static bool spawnMyCar = false;
 	bool canSpawn = false;
+=======
+>>>>>>> parent of 946bed2... push
 
 	void Update()
 	{
 		playersConnected = playerCount;
+<<<<<<< HEAD
 		displayChosenCar = CarChoose.carNumber;
 		if (spawnMyCar == true)
 		{
 			canSpawn = true;
 			spawnMyCar = false;
 		}
+=======
+>>>>>>> parent of 946bed2... push
 	}
 
 	public override void OnServerConnect(NetworkConnection conn)
