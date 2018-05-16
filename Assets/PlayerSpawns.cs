@@ -6,15 +6,21 @@ using UnityEngine.Networking;
 public class PlayerSpawns : NetworkManager {
 
 	private GameObject[] Car = new GameObject[11];
-	private GameObject Car2;
 	public static int playerCount;
 	public int playersConnected;
-	public int didIgetIt;
+	public int displayChosenCar;
+	public static bool spawnMyCar = false;
+	bool canSpawn = false;
 
 	void Update()
 	{
 		playersConnected = playerCount;
-		didIgetIt = CarChoose.carNumber;
+		displayChosenCar = CarChoose.carNumber;
+		if (spawnMyCar == true)
+		{
+			canSpawn = true;
+			spawnMyCar = false;
+		}
 	}
 
 	public override void OnServerConnect(NetworkConnection conn)
@@ -25,18 +31,49 @@ public class PlayerSpawns : NetworkManager {
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
 	{
 		playerCount++;
-		if (playerCount == 1)
+		if (playerCount == 1 && canSpawn == true)
 		{
-			Car[0] = Instantiate(Resources.Load("Car1"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-			Debug.Log("Player1");
-			NetworkServer.AddPlayerForConnection(conn, Car[0], playerControllerId);
+			if (CarChoose.carNumber == 0)
+			{
+				Car[0] = Instantiate(Resources.Load("Car1"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+				Debug.Log("Player1");
+				NetworkServer.AddPlayerForConnection(conn, Car[0], playerControllerId);
+			}
+			if (CarChoose.carNumber == 2)
+			{
+				Car[0] = Instantiate(Resources.Load("Car2"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+				Debug.Log("Player1");
+				NetworkServer.AddPlayerForConnection(conn, Car[0], playerControllerId);
+			}
+			if (CarChoose.carNumber == 3)
+			{
+				Car[0] = Instantiate(Resources.Load("Car3"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+				Debug.Log("Player1");
+				NetworkServer.AddPlayerForConnection(conn, Car[0], playerControllerId);
+			}
 		}
 
 		if (playerCount == 2)
 		{
-			Car[1] = Instantiate(Resources.Load("Car2"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-			Debug.Log("Player2");
-			NetworkServer.AddPlayerForConnection(conn, Car[1], playerControllerId);
+			if (CarChoose.carNumber == 0)
+			{
+				Car[1] = Instantiate(Resources.Load("Car1"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+				Debug.Log("Player2");
+				NetworkServer.AddPlayerForConnection(conn, Car[1], playerControllerId);
+			}
+			if (CarChoose.carNumber == 2)
+			{
+				Car[1] = Instantiate(Resources.Load("Car2"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+				Debug.Log("Player2");
+				NetworkServer.AddPlayerForConnection(conn, Car[1], playerControllerId);
+			}
+			if (CarChoose.carNumber == 3)
+			{
+				Car[1] = Instantiate(Resources.Load("Car3"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+				Debug.Log("Player2");
+				NetworkServer.AddPlayerForConnection(conn, Car[1], playerControllerId);
+			}
+
 		}
 
 		if (playerCount == 3)

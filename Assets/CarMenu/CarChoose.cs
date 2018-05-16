@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//using UnityEngine.Networking;
+using UnityEngine.Networking;
 
-public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
+public class CarChoose : NetworkBehaviour {
 
 	public GameObject[] cars;
 	public float rotationSpeed;
@@ -15,7 +15,6 @@ public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
 
 	void Start () 
 	{
-		//whatCar++;
 		for (int i = 0; i < cars.Length; i++)
 		{
 			cars [i].SetActive (false);
@@ -27,10 +26,11 @@ public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
 	{
 		transform.Rotate (0,rotationSpeed,0);
 
+		carNumber = whatCar;
+
 		if(Input.GetKeyDown(KeyCode.W))
 		{
-			carNumber = whatCar;
-			SceneManager.LoadScene (1);
+			PlayerSpawns.spawnMyCar = true;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space))
