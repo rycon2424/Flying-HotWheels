@@ -9,10 +9,12 @@ public class PlayerSpawns : NetworkManager {
 	private GameObject Car2;
 	public static int playerCount;
 	public int playersConnected;
+	public int didIgetIt;
 
 	void Update()
 	{
 		playersConnected = playerCount;
+		didIgetIt = CarChoose.carNumber;
 	}
 
 	public override void OnServerConnect(NetworkConnection conn)

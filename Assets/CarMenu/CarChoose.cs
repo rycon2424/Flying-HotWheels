@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
+//using UnityEngine.Networking;
 
-public class CarChoose : NetworkBehaviour {
+public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
 
 	public GameObject[] cars;
 	public float rotationSpeed;
 	public int whatCar;
-	public int hidden;
+	int hidden;
+
+	public static int carNumber;
 
 	void Start () 
 	{
@@ -23,6 +26,12 @@ public class CarChoose : NetworkBehaviour {
 	void Update () 
 	{
 		transform.Rotate (0,rotationSpeed,0);
+
+		if(Input.GetKeyDown(KeyCode.W))
+		{
+			carNumber = whatCar;
+			SceneManager.LoadScene (1);
+		}
 
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
