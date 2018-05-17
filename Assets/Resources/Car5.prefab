@@ -251,7 +251,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101887025610314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 0.22, z: 0}
   m_LocalScale: {x: 4.4372106, y: 1.3025746, z: 7.7730856}
   m_Children: []
   m_Father: {fileID: 4828788169243824}
@@ -264,7 +264,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492401094761718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.445, y: 0.45, z: 3.153}
+  m_LocalPosition: {x: -1.5, y: 0.45, z: 3.153}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4990659982505574}
@@ -320,7 +320,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1760817632239342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.44, y: 0.45, z: 2.8599997}
+  m_LocalPosition: {x: 1.5, y: 0.45, z: 2.8599997}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4990659982505574}
@@ -346,7 +346,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1958265820383262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.382, y: 0.45, z: -2.5300002}
+  m_LocalPosition: {x: -1.5, y: 0.45, z: -2.5300002}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4990659982505574}
@@ -372,7 +372,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1536348027800682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.467, y: 0.45, z: -2.53}
+  m_LocalPosition: {x: 1.5, y: 0.45, z: -2.53}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4990659982505574}
@@ -398,7 +398,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532631323204670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45712027, y: 0.2013695, z: 16.30963}
+  m_LocalPosition: {x: -5.2656784, y: 0.88, z: 87.04573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4783642317419026}
@@ -712,8 +712,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.6755716, z: 1.15533}
-  m_Center: {x: 0.011872005, y: 0.20778577, z: -0.0024981992}
+  m_Size: {x: 0.9000001, y: 0.22803444, z: 1.15533}
+  m_Center: {x: 0.011871978, y: -0.01598283, z: -0.0024981992}
 --- !u!114 &114189608760339122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMotorTorque: 750000
+  maxMotorTorque: 7500
   maxSteeringAngle: 60
   truck_Infos:
   - leftWheel: {fileID: 146591478316099666}
