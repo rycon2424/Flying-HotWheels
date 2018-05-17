@@ -813,7 +813,7 @@ MonoBehaviour:
   PreviousFramePosition: {x: 0, y: 0, z: 0}
   cam: {fileID: 4956387699043000}
   Speed: 0
-  rotationSpeed: 2000
+  rotationSpeed: 100
 --- !u!124 &124670484437986418
 Behaviour:
   m_ObjectHideFlags: 1
