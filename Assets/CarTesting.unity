@@ -343,6 +343,7 @@ MonoBehaviour:
   - {fileID: 1636856966898700, guid: 26b3d20851f46ff4a8567b398ecb7fc5, type: 2}
   - {fileID: 1573232830513566, guid: 2af838a9255d3024392cb84cd7d5464a, type: 2}
   - {fileID: 1742490091986160, guid: 47ae9e8e45564904bb4450167cb0df17, type: 2}
+  - {fileID: 1532631323204670, guid: 8abddeed84f021342b834494ae811e95, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -1205,7 +1206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4615776300120250, guid: 917645db1b9aa5e4d8f87d56b3f71099, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 917645db1b9aa5e4d8f87d56b3f71099, type: 2}
@@ -1340,7 +1341,7 @@ Transform:
   - {fileID: 1413689210}
   - {fileID: 2066208112}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347851575
 GameObject:
@@ -1573,7 +1574,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1520315565
 GameObject:

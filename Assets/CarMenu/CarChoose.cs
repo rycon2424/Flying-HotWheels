@@ -14,7 +14,6 @@ public class CarChoose : MonoBehaviour /*NetworkBehaviour*/ {
 
 	void Start () 
 	{
-		//whatCar++;
 		for (int i = 0; i < cars.Length; i++)
 		{
 			cars [i].SetActive (false);
