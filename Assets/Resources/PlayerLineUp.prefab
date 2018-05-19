@@ -5279,7 +5279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 114319517611416144}
   gate: {fileID: 1066141134158910}
-  countDown: 30
+  countDown: 45
 --- !u!114 &114256777654054322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5623,7 +5623,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 31
+  m_Text: Timer
 --- !u!114 &114381725381669116
 MonoBehaviour:
   m_ObjectHideFlags: 1

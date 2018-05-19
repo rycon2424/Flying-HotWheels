@@ -9,6 +9,8 @@ public class SyncedVars : NetworkBehaviour {
     public Text timer;
     public static bool gameStarted = false;
     public GameObject gate;
+    public AudioSource track;
+    bool playOnce = true;
     [SyncVar]
     public int countDown = 45;
 
@@ -25,6 +27,11 @@ public class SyncedVars : NetworkBehaviour {
             StartCoroutine(CountDown());
             gameStarted = false;
         }
+        if (countDown == 16 && playOnce)
+        {
+            playOnce = false;
+            track.Play();
+        }
         if (countDown == 0)
         {
             Dot_Truck_Controller.raceStarted = true;
@@ -36,7 +43,7 @@ public class SyncedVars : NetworkBehaviour {
     {
         for (int i = 0; i < 45; i++)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.1f);
             countDown = countDown - 1;
         }
     }
