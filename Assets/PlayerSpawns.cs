@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 
 public class PlayerSpawns : NetworkManager {
@@ -8,10 +9,36 @@ public class PlayerSpawns : NetworkManager {
 	private GameObject[] Car = new GameObject[11];
 	public static int playerCount;
 	public int playersConnected;
+	public static int countDown = 30;
+	public Text countDownDisplay;
+	public static bool startGame;
+	public GameObject blockade;
+	bool gameCanStart = false;
+	bool once = true;
 
 	void Update()
 	{
+		countDownDisplay.text = countDown.ToString ();
 		playersConnected = playerCount;
+		if (gameCanStart == true)
+		{
+			StartCoroutine(Seconds());
+			gameCanStart = false;
+		}
+
+		if (countDown == 0)
+		{
+			Destroy(blockade);
+		}
+	}
+
+	IEnumerator Seconds()
+	{
+		for (int i = 0; i < 30; i++)
+		{
+			yield return new WaitForSeconds (1);
+			countDown = countDown - 1;
+		}
 	}
 
 
@@ -22,6 +49,11 @@ public class PlayerSpawns : NetworkManager {
 
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
 	{
+		if (once == true)
+		{
+			gameCanStart = true;
+			once = false;
+		}
 		playerCount++;
 		if (playerCount == 1)
 		{
