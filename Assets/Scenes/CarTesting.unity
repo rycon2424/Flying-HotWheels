@@ -913,11 +913,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114279427331520498, guid: 917645db1b9aa5e4d8f87d56b3f71099,
-        type: 2}
-      propertyPath: m_selectedTriangles.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4615776300120250, guid: 917645db1b9aa5e4d8f87d56b3f71099, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -950,26 +945,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 33178712920573892, guid: 917645db1b9aa5e4d8f87d56b3f71099,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 558089285}
     - target: {fileID: 64434394602898376, guid: 917645db1b9aa5e4d8f87d56b3f71099,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 558089285}
-    - target: {fileID: 114016568814966338, guid: 917645db1b9aa5e4d8f87d56b3f71099,
+    - target: {fileID: 33178712920573892, guid: 917645db1b9aa5e4d8f87d56b3f71099,
         type: 2}
-      propertyPath: track
+      propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 160602680}
-    - target: {fileID: 114279427331520498, guid: 917645db1b9aa5e4d8f87d56b3f71099,
-        type: 2}
-      propertyPath: m_selectedTriangles.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 558089285}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 917645db1b9aa5e4d8f87d56b3f71099, type: 2}
   m_IsPrefabParent: 0
@@ -1703,113 +1688,6 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &160602678 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1135514676416724, guid: 917645db1b9aa5e4d8f87d56b3f71099,
-    type: 2}
-  m_PrefabInternal: {fileID: 109986711}
---- !u!81 &160602679
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 160602678}
-  m_Enabled: 1
---- !u!82 &160602680
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 160602678}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 020115302db187243904a00f5c48f20f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.152
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!43 &170684911
 Mesh:
   m_ObjectHideFlags: 0
@@ -2165,9 +2043,10 @@ MonoBehaviour:
   - {fileID: 1573232830513566, guid: 2af838a9255d3024392cb84cd7d5464a, type: 2}
   - {fileID: 1742490091986160, guid: 47ae9e8e45564904bb4450167cb0df17, type: 2}
   - {fileID: 1532631323204670, guid: 8abddeed84f021342b834494ae811e95, type: 2}
-  - {fileID: 1346993506468374, guid: 6c65575657338a74ebe389d31a4fbeb9, type: 2}
   - {fileID: 1349021238541110, guid: 1d382f907b0037a4181f5f4b5e8de6d2, type: 2}
+  - {fileID: 1764329538000864, guid: 74d967b7e02b8524094ae1c2d59eb778, type: 2}
   - {fileID: 1968498897202558, guid: a7a5f2130fe9e384fba4ce9df7b23644, type: 2}
+  - {fileID: 1346993506468374, guid: 6c65575657338a74ebe389d31a4fbeb9, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -16403,7 +16282,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh88992
+  m_Name: pb_Mesh33402
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
