@@ -19,7 +19,7 @@ public class CarTrilling : MonoBehaviour
 
 	void Update()
 	{
-		
+
 		if (Speed < 40)
 		{
 			if(Again)
@@ -50,7 +50,7 @@ public class CarTrilling : MonoBehaviour
 
 	void FixedUpdate () 
 	{
-		float movementPerFrame = Vector3.Distance (PreviousFramePosition, transform.position) ;
+        float movementPerFrame = Vector3.Distance(PreviousFramePosition, transform.position);
 		Speed = movementPerFrame / Time.deltaTime;
 		PreviousFramePosition = transform.position;
 	}
