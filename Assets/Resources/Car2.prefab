@@ -1149,6 +1149,8 @@ MonoBehaviour:
   PreviousFramePosition: {x: 0, y: 0, z: 0}
   cam: {fileID: 4043409758824870}
   Speed: 0
+  canFinish: 0
+  coroutineBool: 1
 --- !u!114 &114460646077354232
 MonoBehaviour:
   m_ObjectHideFlags: 1
