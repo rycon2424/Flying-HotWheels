@@ -43,7 +43,7 @@ public class SyncedVars : NetworkBehaviour {
     {
         for (int i = 0; i < 45; i++)
         {
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.1f);
             countDown = countDown - 1;
         }
     }

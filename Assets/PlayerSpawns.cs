@@ -39,28 +39,28 @@ public class PlayerSpawns : NetworkManager {
 
 		if (playerCount == 2)
 		{
-			Car[1] = Instantiate(Resources.Load("Car1"), new Vector3(5.68f, 0.4f, 50.44f), Quaternion.identity) as GameObject;
+			Car[1] = Instantiate(Resources.Load("Car7"), new Vector3(5.68f, 0.4f, 50.44f), Quaternion.identity) as GameObject;
 			Debug.Log("Player2");
 			NetworkServer.AddPlayerForConnection(conn, Car[1], playerControllerId);
 		}
 
 		if (playerCount == 3)
 		{
-			Car[2] = Instantiate(Resources.Load("Car7"), new Vector3(-5.73f, 0.4f, 37.3f), Quaternion.identity) as GameObject;
+			Car[2] = Instantiate(Resources.Load("Car6"), new Vector3(-5.73f, 0.4f, 37.3f), Quaternion.identity) as GameObject;
 			Debug.Log("Player3");
 			NetworkServer.AddPlayerForConnection(conn, Car[2], playerControllerId);
 		}
 
 		if (playerCount == 4)
 		{
-			Car[3] = Instantiate(Resources.Load("Car4"), new Vector3(5.68f, 0.4f, 21.9f), Quaternion.identity) as GameObject;
+			Car[3] = Instantiate(Resources.Load("Car3"), new Vector3(5.68f, 0.4f, 21.9f), Quaternion.identity) as GameObject;
 			Debug.Log("Player4");
 			NetworkServer.AddPlayerForConnection(conn, Car[3], playerControllerId);
 		}
 
 		if (playerCount == 5)
 		{
-			Car[4] = Instantiate(Resources.Load("Car5"), new Vector3(-6.1f, 0.4f, 7), Quaternion.identity) as GameObject;
+			Car[4] = Instantiate(Resources.Load("CarDLC"), new Vector3(-6.1f, 0.4f, 7), Quaternion.identity) as GameObject;
 			Debug.Log("Player5");
 			NetworkServer.AddPlayerForConnection(conn, Car[4], playerControllerId);
 		}
