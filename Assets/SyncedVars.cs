@@ -11,8 +11,12 @@ public class SyncedVars : NetworkBehaviour {
     public GameObject gate;
     public AudioSource track;
     bool playOnce = true;
+
     [SyncVar]
     public int countDown = 45;
+
+    public Material[] skyBoxes = new Material[1];
+    public Transform[] levels = new Transform[1];
 
     void Start ()
     {
@@ -31,6 +35,8 @@ public class SyncedVars : NetworkBehaviour {
         {
             playOnce = false;
             track.Play();
+            RenderSettings.skybox = skyBoxes[Random.Range(0, skyBoxes.Length)];
+            Instantiate(levels[0], levels[0].transform.position, levels[0].transform.rotation);
         }
         if (countDown == 0)
         {
