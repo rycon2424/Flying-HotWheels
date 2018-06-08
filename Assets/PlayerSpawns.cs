@@ -32,7 +32,7 @@ public class PlayerSpawns : NetworkManager {
 
 		if (playerCount == 1)
 		{
-			Car[0] = Instantiate(Resources.Load("Car4"), new Vector3(-5.73f, 0.4f, 64.33f), Quaternion.identity) as GameObject;
+			Car[0] = Instantiate(Resources.Load("Car3"), new Vector3(-5.73f, 0.4f, 64.33f), Quaternion.identity) as GameObject;
 			Debug.Log("Player1");
 			NetworkServer.AddPlayerForConnection(conn, Car[0], playerControllerId);
 		}
