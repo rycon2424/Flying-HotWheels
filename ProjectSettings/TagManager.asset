@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lap
   - Car
+  - Reset
   layers:
   - Default
   - TransparentFX

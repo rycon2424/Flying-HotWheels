@@ -21,9 +21,8 @@ public class Respawn : MonoBehaviour {
     {
         if (col.gameObject.tag == "Car")
         {
-            Debug.Log("collide?");
-            //col.transform.position = new Vector3(respawnLoc.x, respawnLoc.y, respawnLoc.z);
-            col.transform.position = respawnLoc;
+            col.transform.parent.position = respawnLoc;
+           
         }
     }
 
