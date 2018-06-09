@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 114156890345285280}
   m_Layer: 0
   m_Name: Car1
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1203,8 +1203,6 @@ MonoBehaviour:
   PreviousFramePosition: {x: 0, y: 0, z: 0}
   cam: {fileID: 4650228391071774}
   Speed: 0
-  canFinish: 0
-  coroutineBool: 1
 --- !u!114 &114718564814989494
 MonoBehaviour:
   m_ObjectHideFlags: 1
